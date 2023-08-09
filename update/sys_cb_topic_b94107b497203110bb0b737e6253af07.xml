@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_topic">
+    <sys_cb_topic action="INSERT_OR_UPDATE">
+        <applicability/>
+        <applicability_mode>query</applicability_mode>
+        <autopilot_topic>false</autopilot_topic>
+        <category/>
+        <channels/>
+        <connect_queue/>
+        <description>for someone losing something</description>
+        <expose_on_palette>false</expose_on_palette>
+        <flexible_conversation_switching>false</flexible_conversation_switching>
+        <graph>{"graph_api_version":"1.0.41","variables":{},"goals":{"primary":{"id":"primary","trigger":{"type":"primary"},"name":"primary","applicability":"","description":"","nodes":{"f9d2afc7c96e48fd90c422839ddf6add":{"id":"f9d2afc7c96e48fd90c422839ddf6add","stepType":"Start","name":"Start","greetingResponse":{"mode":"simple","value":""}},"43c2662d07174d149d78fc0d718cbd31":{"id":"43c2662d07174d149d78fc0d718cbd31","stepType":"TerminateGoal","name":"End","confirmationMessage":{"mode":"simple","value":""}}},"edges":[{"id":"9555d7439b3143b7908f5172858aa9b7","edgeType":"Edge","source":"f9d2afc7c96e48fd90c422839ddf6add","target":"43c2662d07174d149d78fc0d718cbd31","sourcePort":"","targetPort":""}]}}}</graph>
+        <key_phrases>lost something,find something</key_phrases>
+        <library>false</library>
+        <live_agent>false</live_agent>
+        <name>lost something</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <roles/>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <source_topic_id/>
+        <sys_class_name>sys_cb_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-07 02:47:49</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>b94107b497203110bb0b737e6253af07</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>lost something</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_topic_b94107b497203110bb0b737e6253af07</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-07 02:47:49</sys_updated_on>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <variables/>
+    </sys_cb_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=b94107b497203110bb0b737e6253af07"/>
+</record_update>

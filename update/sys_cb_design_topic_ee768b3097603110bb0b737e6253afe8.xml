@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cb_design_topic">
+    <sys_cb_design_topic action="INSERT_OR_UPDATE">
+        <compiled_topic display_value="pick up something">aa768b3097603110bb0b737e6253afe3</compiled_topic>
+        <design_definition>{"type":"FlowTopic","type":"FlowTopic","triggers":[{"type":"Trigger","name":"c1fbf8e12a864e08a04a42e3bce1e3c9","triggerType":"request","applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"id":"c1fbf8e12a864e08a04a42e3bce1e3c9"}],"goals":[{"name":"primary","trigger_id":"c1fbf8e12a864e08a04a42e3bce1e3c9","nodes":[{"type":"StartGoal","type":"StartGoal","goal_id":"primary","greeting_msg":{"type":"String","type":"String","mode":"string","value":""},"id":"96f6fadf7e744b5592345d92f6955593","name":"Start"},{"type":"TerminateGoal","type":"TerminateGoal","goal_id":"primary","confirmation_msg":{"type":"String","type":"String","mode":"string","value":""},"id":"3683afae171640c7837f9cd817145c2e","name":"End"}],"edges":[{"type":"Edge","source_node_id":"96f6fadf7e744b5592345d92f6955593","target_node_id":"3683afae171640c7837f9cd817145c2e","id":"fae89615e5ae418fab460ad558294eea"}],"id":"primary"}],"script_variables":[{"type":"VariableDto","type":"String","name":"LiveAgent_case","value":{"type":"String","type":"String","mode":"string"},"list":false,"id":"d7dc5042b49f4a4f9f569ee3391ab91e","formatType":"text","secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"LiveAgent_portal","value":{"type":"String","type":"String","mode":"string"},"list":false,"id":"3bc9204a0ea64a9392d49dcaf221a815","formatType":"text","secure":false,"sensitive":false},{"type":"VariableDto","type":"String","name":"LiveAgent_esc_pre_chat_category","value":{"type":"String","type":"String","mode":"string"},"list":false,"id":"c26c8daed97944f19d91d9e020ef015d","formatType":"text","secure":false,"sensitive":false}],"glide_variables":[{"type":"Reference","type":"Reference","table":"sys_user","id":"current-user","name":"user","formatType":"text","secure":false,"sensitive":false,"list":false}],"applicability":{"type":"Applicability","type":"Applicability","mode":"script","value":"true"},"roles":["public","action_designer","activity_admin","activity_creator","admin","agent_admin"],"scope":"6ead8e780f603200cd674f8ce1050ed1","domain":"global","topic_type":"STANDARD","channels":[],"id":"6391833c97203110bb0b737e6253af7c","name":"pick up something","key_phrases":["pick up something"],"nlu_provider":"","nlu_model":"","nlu_model_label":"","nlu_intent":"","nlu_intent_label":"","flexible_conversation_switching":true,"autopilot_topic":true,"design_categories":[{"name":null,"visible":false,"sysId":"d392f2267702011044a6e6dcbd5a9918"},{"name":null,"visible":false,"sysId":"5ca81c5a7331201083c1e0dbc4f6a7f8"},{"name":null,"visible":false,"sysId":"bfdd66da0b203300a1b16c2367673a1f"}],"triggerable_by_notification":false,"library":false,"readOnly":false,"nluMapping":"[]"}</design_definition>
+        <design_topic_id>6391833c97203110bb0b737e6253af7c</design_topic_id>
+        <graph>{
+  "graph_api_version": "1.0.41",
+  "goals": {
+    "primary": {
+      "id": "primary",
+      "trigger": {
+        "type": "primary"
+      },
+      "name": "primary",
+      "applicability": "",
+      "description": "",
+      "nodes": {
+        "96f6fadf7e744b5592345d92f6955593": {
+          "id": "96f6fadf7e744b5592345d92f6955593",
+          "stepType": "Start",
+          "name": "Start",
+          "greetingResponse": {
+            "mode": "simple",
+            "value": ""
+          }
+        },
+        "3683afae171640c7837f9cd817145c2e": {
+          "id": "3683afae171640c7837f9cd817145c2e",
+          "stepType": "TerminateGoal",
+          "name": "End",
+          "confirmationMessage": {
+            "mode": "simple",
+            "value": ""
+          }
+        }
+      },
+      "edges": [
+        {
+          "id": "fae89615e5ae418fab460ad558294eea",
+          "edgeType": "Edge",
+          "source": "96f6fadf7e744b5592345d92f6955593",
+          "target": "3683afae171640c7837f9cd817145c2e",
+          "sourcePort": "",
+          "targetPort": ""
+        }
+      ]
+    }
+  },
+  "variables": {
+    "d7dc5042b49f4a4f9f569ee3391ab91e": {
+      "id": "d7dc5042b49f4a4f9f569ee3391ab91e",
+      "name": "LiveAgent_case",
+      "value": {
+        "mode": "simple",
+        "value": null
+      },
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "3bc9204a0ea64a9392d49dcaf221a815": {
+      "id": "3bc9204a0ea64a9392d49dcaf221a815",
+      "name": "LiveAgent_portal",
+      "value": {
+        "mode": "simple",
+        "value": null
+      },
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "c26c8daed97944f19d91d9e020ef015d": {
+      "id": "c26c8daed97944f19d91d9e020ef015d",
+      "name": "LiveAgent_esc_pre_chat_category",
+      "value": {
+        "mode": "simple",
+        "value": null
+      },
+      "varType": "script",
+      "category": "vaVars"
+    },
+    "current-user": {
+      "category": "vaInputs",
+      "id": "current-user",
+      "label": "User",
+      "name": "user",
+      "table": "sys_user",
+      "varType": "reference"
+    }
+  }
+}</graph>
+        <name>pick up something</name>
+        <sys_class_name>sys_cb_design_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-07 03:10:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>ee768b3097603110bb0b737e6253afe8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FlowTopic</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cb_design_topic_ee768b3097603110bb0b737e6253afe8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-07 03:10:32</sys_updated_on>
+        <type>FlowTopic</type>
+    </sys_cb_design_topic>
+</record_update>

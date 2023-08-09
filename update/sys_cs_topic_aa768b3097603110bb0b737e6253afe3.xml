@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_cs_topic">
+    <sys_cs_topic action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applicability>true</applicability>
+        <autopilot_topic>true</autopilot_topic>
+        <cb_topic_id display_value="pick up something">6391833c97203110bb0b737e6253af7c</cb_topic_id>
+        <channels/>
+        <definition>{"id":"6391833c97203110bb0b737e6253af7c","name":"pick up something","system_topic":false,"autopilot_topic":true,"vendor_id":"c2f0b8f187033200246ddd4c97cb0bb9","description":"pick up something","applicability":"true","categories":[],"key_phrases":["pick up something"],"variables":[{"name":"LiveAgent_case","type":"java.lang.Object"},{"name":"LiveAgent_portal","type":"java.lang.Object"},{"name":"LiveAgent_esc_pre_chat_category","type":"java.lang.Object"},{"name":"__segment_trigger_c1fbf8e12a864e08a04a42e3bce1e3c9_done","type":"java.lang.Object","init_value":"false"},{"name":"previous_graph_node","type":"java.lang.Object"}],"fields":[{"type":"Reference","table_name":"sys_user","name":"user","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[]},{"type":"Boolean","name":"RootDecisionBranch_ae768b30386031109b4da3f7ddda7fe2","unique":false,"default_value":"true","key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[]},{"type":"String","name":"__silent_Branch_RootDecisionBranch_6e768b306a6031104ee927fefc820ee2","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_Decision_RootDecision_2e768b302b603110461e4192913520e2","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_TerminateGoal_3683afae171640c7837f9cd817145c2e","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true},{"type":"String","name":"__silent_StartGoal_96f6fadf7e744b5592345d92f6955593","unique":false,"key_phrases":[],"mask_type":"NONE","list":false,"static_enum_list":[],"encrypt_if_secure":true}],"actions":[],"tasks":[{"type":"Consumer to system","show_as_button":true,"name":"primary","description":"primary","applicability":"vaVars.__segment_trigger_c1fbf8e12a864e08a04a42e3bce1e3c9_done==false &amp;&amp; true","mode":"Qmode","key_phrases":[],"greeting_msg":"vaInputs.initialize(\"user\");vaInputs.initialize(\"RootDecisionBranch_ae768b30386031109b4da3f7ddda7fe2\");vaInputs.initialize(\"__silent_TerminateGoal_3683afae171640c7837f9cd817145c2e\");vaInputs.initialize(\"__silent_StartGoal_96f6fadf7e744b5592345d92f6955593\");vaInputs.initialize(\"__silent_Branch_RootDecisionBranch_6e768b306a6031104ee927fefc820ee2\");vaInputs.initialize(\"__silent_Decision_RootDecision_2e768b302b603110461e4192913520e2\");null;","fields":[{"name":"__silent_Decision_RootDecision_2e768b302b603110461e4192913520e2","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_2e768b302b603110461e4192913520e2\";vaInputs.__silent_Decision_RootDecision_2e768b302b603110461e4192913520e2=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecision_for_goal_primary___RootDecision_2e768b302b603110461e4192913520e2\";var ackMsg=null;ackMsg=null;vaInputs.RootDecisionBranch_ae768b30386031109b4da3f7ddda7fe2=true;ackMsg;"},{"name":"__silent_Branch_RootDecisionBranch_6e768b306a6031104ee927fefc820ee2","applicable":"vaVars.previous_graph_node==\"RootDecision_for_goal_primary___RootDecision_2e768b302b603110461e4192913520e2\" &amp;&amp; ((vaInputs.RootDecisionBranch_ae768b30386031109b4da3f7ddda7fe2.getValue() == true))","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_6e768b306a6031104ee927fefc820ee2___RootDecisionBranch_6e768b306a6031104ee927fefc820ee2\";vaInputs.__silent_Branch_RootDecisionBranch_6e768b306a6031104ee927fefc820ee2=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"RootDecisionBranch_6e768b306a6031104ee927fefc820ee2___RootDecisionBranch_6e768b306a6031104ee927fefc820ee2\";var ackMsg=null;ackMsg=null;ackMsg;"},{"name":"__silent_StartGoal_96f6fadf7e744b5592345d92f6955593","applicable":"vaVars.previous_graph_node==\"RootDecisionBranch_6e768b306a6031104ee927fefc820ee2___RootDecisionBranch_6e768b306a6031104ee927fefc820ee2\"","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"Start___96f6fadf7e744b5592345d92f6955593\";vaInputs.__silent_StartGoal_96f6fadf7e744b5592345d92f6955593=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"Start___96f6fadf7e744b5592345d92f6955593\";var ackMsg=null;ackMsg=null;ackMsg;"},{"name":"__silent_TerminateGoal_3683afae171640c7837f9cd817145c2e","applicable":"vaVars.previous_graph_node==\"Start___96f6fadf7e744b5592345d92f6955593\"","direction":"Input","required":true,"prompt_msg":"vaVars.previous_graph_node=\"End___3683afae171640c7837f9cd817145c2e\";vaInputs.__silent_TerminateGoal_3683afae171640c7837f9cd817145c2e=true;null;","confirm_msg_on_default_value":{"msg":"","val_for_confirm":true},"nlu_text_input":false,"nlu_confirmation_prompt":false,"acknowledge_msg":"vaVars.previous_graph_node=\"End___3683afae171640c7837f9cd817145c2e\";var ackMsg=null;ackMsg=null;vaVars.__segment_trigger_c1fbf8e12a864e08a04a42e3bce1e3c9_done=true;ackMsg;"}],"variables_update":[]}],"roles":["public","action_designer","activity_admin","activity_creator","admin","agent_admin"],"active":true,"published":true,"library":false,"expose_on_palette":false,"palette_label":"","flexible_conversation_switching":true,"design_categories":[{"name":"HRSD Actionable Notifications","visible":false,"sysId":"d392f2267702011044a6e6dcbd5a9918"},{"name":"ITSM Actionable Notifications","visible":false,"sysId":"5ca81c5a7331201083c1e0dbc4f6a7f8"},{"name":"ITSM Fulfiller","visible":false,"sysId":"bfdd66da0b203300a1b16c2367673a1f"}],"nlu_provider":"","nlu_model":"","nlu_intent":"","topic_type":"STANDARD","channels":[],"triggerable_by_notification":false,"secure_custom_input_control":false,"score":0.0,"visible":true,"discoverable":true,"sys_scope":"6ead8e780f603200cd674f8ce1050ed1","sys_domain":"global","title":"pick up something","nlu_intent_label":"","nlu_model_label":""}</definition>
+        <design_category>d392f2267702011044a6e6dcbd5a9918,5ca81c5a7331201083c1e0dbc4f6a7f8,bfdd66da0b203300a1b16c2367673a1f</design_category>
+        <discoverable>true</discoverable>
+        <expose_on_palette>false</expose_on_palette>
+        <fields/>
+        <flexible_conversation_switching>true</flexible_conversation_switching>
+        <is_system_topic>false</is_system_topic>
+        <key_phrases>pick up something</key_phrases>
+        <last_published_on>2023-08-07 03:10:32</last_published_on>
+        <library>false</library>
+        <library_usage>null</library_usage>
+        <metaphone/>
+        <name>pick up something</name>
+        <nlu_intent/>
+        <nlu_intent_label/>
+        <nlu_model/>
+        <nlu_model_label/>
+        <nlu_provider/>
+        <palette_label/>
+        <published>true</published>
+        <roles>public,action_designer,activity_admin,activity_creator,admin,agent_admin</roles>
+        <secure_custom_input_control>false</secure_custom_input_control>
+        <sys_class_name>sys_cs_topic</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2023-08-07 03:10:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>aa768b3097603110bb0b737e6253afe3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>pick up something</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_cs_topic_aa768b3097603110bb0b737e6253afe3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2023-08-07 03:10:32</sys_updated_on>
+        <title>pick up something</title>
+        <triggerable_by_notification>false</triggerable_by_notification>
+        <type>STANDARD</type>
+        <vendor display_value="ServiceNow">c2f0b8f187033200246ddd4c97cb0bb9</vendor>
+        <visible>true</visible>
+    </sys_cs_topic>
+    <sys_variable_value action="delete_multiple" query="document_key=aa768b3097603110bb0b737e6253afe3"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=aa768b3097603110bb0b737e6253afe3"/>
+</record_update>
